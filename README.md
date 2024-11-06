@@ -44,4 +44,8 @@ def combine_playlists(playlist_e, playlist_f):
     combined_playlist = {**playlist_e_dict, **playlist_f_dict}
     return combined_playlist
 
+# Функция для выбора случайных песен из плейлиста
+def select_random_songs(combined_playlist, n):
+    return random.sample(list(combined_playlist.items()), n)
+
 
