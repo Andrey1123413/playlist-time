@@ -29,3 +29,11 @@ def parse_playlist_e(playlist):
     songs = pattern.findall(playlist)
     return {name: float(time.replace(':', '.')) for name, time in songs if time}
 
+# Функция для парсинга плейлиста из кортежа 
+def parse_playlist_f(playlist):
+    combined_dict = {}
+    for p in playlist:
+        combined_dict.update(p)
+    return combined_dict
+
+
