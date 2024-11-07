@@ -54,4 +54,11 @@ def calculate_total_time(selected_songs):
     total_time = sum(time for _, time in selected_songs)
     return total_time
 
+# Основная функция для подсчета общего времени звучания n случайных песен
+def get_duration(playlist_e, playlist_f, n):
+    combined_playlist = combine_playlists(playlist_e, playlist_f)
+    selected_songs = select_random_songs(combined_playlist, n)
+    total_time = calculate_total_time(selected_songs)
+    return total_time
+
 
