@@ -1,3 +1,4 @@
+
 ## project_5 
  
 # Представим, что некое приложение хранит плейлист песен в двух видах: 
@@ -81,3 +82,4 @@ playlist_f = (
 n = 1
 total_time = get_duration(playlist_e, playlist_f, n)
 print(f'Общее время для {n} случайных песен: {total_time:.2f} минут')
+
